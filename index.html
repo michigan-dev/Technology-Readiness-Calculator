@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab-to-Market Readiness Scorer</title>
+  <meta name="description" content="Score your lab-born technology on TRL, MRL and business readiness in five minutes. Get your biggest gap, next milestones and a pitch-ready summary.">
+  <meta name="color-scheme" content="light dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lab-to-Market Readiness Scorer">
+  <meta property="og:description" content="Score your technology on TRL, MRL and business readiness. Built for deep-tech founders spinning out of national labs and universities.">
+  <meta property="og:site_name" content="Lab-to-Market Readiness Scorer">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Lab-to-Market Readiness Scorer">
+  <meta name="twitter:description" content="Score your technology on TRL, MRL and business readiness. Built for deep-tech founders spinning out of national labs and universities.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%230a5fd1'%3E%3Crect x='2' y='14' width='4' height='8' rx='1'/%3E%3Crect x='9' y='8' width='4' height='14' rx='1'/%3E%3Crect x='16' y='2' width='4' height='20' rx='1'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./" aria-label="Lab-to-Market Readiness Scorer, home">
+        <svg class="brand-mark" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+          <rect x="2" y="14" width="4" height="8" rx="1"></rect>
+          <rect x="9" y="8" width="4" height="14" rx="1"></rect>
+          <rect x="16" y="2" width="4" height="20" rx="1"></rect>
+        </svg>
+        <span>Lab-to-Market <strong>Readiness Scorer</strong></span>
+      </a>
+      <a class="header-link" href="#about" id="about-link">About the scales</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <div id="progress-region" class="progress-region" hidden>
+      <div class="progress-meta">
+        <span id="progress-label">Step 1 of 6</span>
+        <span id="progress-title" class="progress-title"></span>
+      </div>
+      <div id="progress" class="progress" role="progressbar" aria-label="Questionnaire progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div id="progress-fill" class="progress-fill"></div>
+      </div>
+    </div>
+
+    <div id="stage">
+      <noscript><p class="notice">This tool needs JavaScript to run. Please enable it and reload the page.</p></noscript>
+    </div>
+
+    <p id="status" class="sr-status" role="status" aria-live="polite"></p>
+
+    <section id="about" class="about" aria-labelledby="about-title">
+      <details id="about-details">
+        <summary><h2 id="about-title">About the scales</h2></summary>
+        <div id="about-body"></div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Built by <a href="https://your-portfolio.example">[YOUR NAME]</a></p>
+      <p class="disclaimer">Scores are a self-assessment aid, not an official certification. TRL definitions follow NASA and DOE; MRL definitions follow the U.S. Department of Defense.</p>
+    </div>
+  </footer>
+
+  <script src="data/questions.js"></script>
+  <script src="scoring.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
