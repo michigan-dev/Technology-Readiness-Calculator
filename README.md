@@ -47,11 +47,11 @@ node --test
 1. Push this repo to GitHub.
 2. Go to **Settings > Pages**.
 3. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, then Save.
-4. Your site appears at `https://<username>.github.io/readiness-scorer/`.
+4. Your site appears at `https://<username>.github.io/Technology-Readiness-Calculator/`.
 
 All asset paths are relative and an empty `.nojekyll` file is included.
 
 ## Before you publish
 
-- Replace `[YOUR NAME]` and the `https://your-portfolio.example` link in the `index.html` footer.
+- Replace the `https://your-portfolio.example` link in the `index.html` footer.
 - Optional: add an `og:image` (absolute URL) and `og:url` once you know the hosted address.
